@@ -1,183 +1,183 @@
-﻿init -3 python:
+init -2 python:
     # this is the master language so it lives at init level -3, not -2 like the others
     #everything in here inherits, if a language doesn't set it the en version is used
 
     ### ENGLISH
 
-    init_language("en")
+    init_language("eo")
 
-    displayDict["en"].styleoverrides = {"font": mainfont,
+    displayDict["eo"].styleoverrides = {"font": mainfont,
                                         "language": "western",
                                         "line_spacing": 0}
 
-    displayDict["en"].timeformat = "%b %d, %H:%M"
+    displayDict["eo"].timeformat = "%b %d, %H:%M"
 
-    displayDict["en"].selector_padding = 0 # some fonts need this to be set to a nonzero amount on 6.16 or the library etc will overflow
-    displayDict["en"].nvl_paragraph_distance = 10 # This needs to be set far lower for some fonts due to a particular bug in 6.16. Ignored in 6.10 releases.
+    displayDict["eo"].selector_padding = 0 # some fonts need this to be set to a nonzero amount on 6.16 or the library etc will overflow
+    displayDict["eo"].nvl_paragraph_distance = 10 # This needs to be set far lower for some fonts due to a particular bug in 6.16. Ignored in 6.10 releases.
 
-    displayDict["en"].sayfont = mainfont
+    displayDict["eo"].sayfont = mainfont
 
-    displayDict["en"].quote_outer_open = u"“"
-    displayDict["en"].quote_outer_close = u"”"
-    displayDict["en"].quote_inner_open = u"‘"
-    displayDict["en"].quote_inner_close = u"’"
+    displayDict["eo"].quote_outer_open = u"“"
+    displayDict["eo"].quote_outer_close = u"”"
+    displayDict["eo"].quote_inner_open = u"‘"
+    displayDict["eo"].quote_inner_close = u"’"
 
-    displayDict["en"].activeLanguage = "English"
-    displayDict["en"].allLanguages = {}
-    displayDict["en"].allLanguages["en"] = displayDict["en"].activeLanguage
-    displayDict["en"].allLanguages["de"] = "German"
-    displayDict["en"].allLanguages["it"] = "Italian"
-    displayDict["en"].allLanguages["fr"] = "French"
-    displayDict["en"].allLanguages["es"] = "Spanish"
-    displayDict["en"].allLanguages["jp"] = "Japanese"
+    displayDict["eo"].activeLanguage = "Esperanto"
+    displayDict["eo"].allLanguages = {}
+    displayDict["eo"].allLanguages["eo"] = displayDict["eo"].activeLanguage
+    displayDict["eo"].allLanguages["de"] = "German"
+    displayDict["eo"].allLanguages["it"] = "Italian"
+    displayDict["eo"].allLanguages["fr"] = "French"
+    displayDict["eo"].allLanguages["es"] = "Spanish"
+    displayDict["eo"].allLanguages["jp"] = "Japanese"
 
-    displayDict["en"].act_term = u"Act"
-    displayDict["en"].window_name = u"Katawa Shoujo"
+    displayDict["eo"].act_term = u"Act"
+    displayDict["eo"].window_name = u"Katawa Shoujo"
 
-    displayDict["en"].main_menu_start = u"Start"
-    displayDict["en"].main_menu_load = u"Load"
-    displayDict["en"].main_menu_extra = u"Extras"
-    displayDict["en"].main_menu_config = u"Options"
-    displayDict["en"].main_menu_quit = u"Quit"
+    displayDict["eo"].main_menu_start = u"Start"
+    displayDict["eo"].main_menu_load = u"Load"
+    displayDict["eo"].main_menu_extra = u"Extras"
+    displayDict["eo"].main_menu_config = u"Options"
+    displayDict["eo"].main_menu_quit = u"Quit"
 
-    displayDict["en"].game_menu_return = u"Return"
-    displayDict["en"].game_menu_show = u"Show image"
-    displayDict["en"].game_menu_history = u"Text history"
-    displayDict["en"].game_menu_skip = u"Skip mode"
-    displayDict["en"].game_menu_auto = u"Auto mode"
-    displayDict["en"].game_menu_config = u"Options"
-    displayDict["en"].game_menu_save = u"Save"
-    displayDict["en"].game_menu_load = u"Load"
-    displayDict["en"].game_menu_main = u"Main menu"
-    displayDict["en"].game_menu_quit = u"Quit"
-    displayDict["en"].game_menu_current_scene = u"Current scene"
-    displayDict["en"].game_menu_current_music = u"Current music track"
-    displayDict["en"].game_menu_replay_indicator = u"Replay"
+    displayDict["eo"].game_menu_return = u"Return"
+    displayDict["eo"].game_menu_show = u"Show image"
+    displayDict["eo"].game_menu_history = u"Text history"
+    displayDict["eo"].game_menu_skip = u"Skip mode"
+    displayDict["eo"].game_menu_auto = u"Auto mode"
+    displayDict["eo"].game_menu_config = u"Options"
+    displayDict["eo"].game_menu_save = u"Save"
+    displayDict["eo"].game_menu_load = u"Load"
+    displayDict["eo"].game_menu_main = u"Main menu"
+    displayDict["eo"].game_menu_quit = u"Quit"
+    displayDict["eo"].game_menu_current_scene = u"Current scene"
+    displayDict["eo"].game_menu_current_music = u"Current music track"
+    displayDict["eo"].game_menu_replay_indicator = u"Replay"
 
-    displayDict["en"].return_button_text = u"Return"
+    displayDict["eo"].return_button_text = u"Return"
 
-    displayDict["en"].hdisabled_label = u"Disable adult content"
-    displayDict["en"].config_page_caption = u"Options"
-    displayDict["en"].config_fullscreen_label = u'Fullscreen mode'
-    displayDict["en"].config_transitions_label = u'Disable transitions'
-    displayDict["en"].config_skip_unseen_label = u'Skip unread text'
-    displayDict["en"].config_skip_after_choice_label = u'Keep skipping after choices'
-    displayDict["en"].config_textspeed_label = u'Text speed'
-    displayDict["en"].config_afmspeed_label = u'Auto mode delay'
-    displayDict["en"].config_musicvol_label = u"Music volume"
-    displayDict["en"].config_musicvol_jukebox_label = u"Vol."
-    displayDict["en"].config_sfxvol_label = u"SFX volume"
-    displayDict["en"].config_sfxtest_label = u"Test"
-    displayDict["en"].config_gamepad_label = u"Gamepad keymap…"
+    displayDict["eo"].hdisabled_label = u"Disable adult content"
+    displayDict["eo"].config_page_caption = u"Options"
+    displayDict["eo"].config_fullscreen_label = u'Fullscreen mode'
+    displayDict["eo"].config_transitions_label = u'Disable transitions'
+    displayDict["eo"].config_skip_unseen_label = u'Skip unread text'
+    displayDict["eo"].config_skip_after_choice_label = u'Keep skipping after choices'
+    displayDict["eo"].config_textspeed_label = u'Text speed'
+    displayDict["eo"].config_afmspeed_label = u'Auto mode delay'
+    displayDict["eo"].config_musicvol_label = u"Music volume"
+    displayDict["eo"].config_musicvol_jukebox_label = u"Vol."
+    displayDict["eo"].config_sfxvol_label = u"SFX volume"
+    displayDict["eo"].config_sfxtest_label = u"Test"
+    displayDict["eo"].config_gamepad_label = u"Gamepad keymap…"
 
-    displayDict["en"].config_language_sel = u"Language selection…"
-    displayDict["en"].config_language_caption = u"Options > Language selection"
-    displayDict["en"].config_language_restart_note = "Note: Changing the language while a session is in progress will return the game to the latest script node."
+    displayDict["eo"].config_language_sel = u"Language selection…"
+    displayDict["eo"].config_language_caption = u"Options > Language selection"
+    displayDict["eo"].config_language_restart_note = "Note: Changing the language while a session is in progress will return the game to the latest script node."
 
-    displayDict["en"].gamepad_caption = u"Options > Gamepad keymap"
-    displayDict["en"].gamepad_key_na = u"Not assigned"
-    displayDict["en"].gamepad_request_key = u"Press the button you want to assign “%s” to.\nClick the mouse or the select button to clear the mapping."
+    displayDict["eo"].gamepad_caption = u"Options > Gamepad keymap"
+    displayDict["eo"].gamepad_key_na = u"Not assigned"
+    displayDict["eo"].gamepad_request_key = u"Press the button you want to assign “%s” to.\nClick the mouse or the select button to clear the mapping."
 
-    displayDict["en"].yesno_yes = u"Yes"
-    displayDict["en"].yesno_no = u"No"
-    displayDict["en"].yesno_okay = u"Continue"
-    displayDict["en"].yesno_savesuccess = u"Progress successfully saved."
-    displayDict["en"].yesno_quit = u"Are you sure you want to\nquit Katawa Shoujo?"
-    displayDict["en"].yesno_return_to_main = u"Are you sure you want to\nreturn to the main menu?"
-    displayDict["en"].save_page_caption = u"Save"
-    displayDict["en"].new_save_button = u"Create new save state"
-    displayDict["en"].load_page_caption = u"Load"
-    displayDict["en"].yesno_load_in_game = u"Are you sure you want to\ndiscard your progress?"
-    displayDict["en"].yesno_save_overwrite = u"Are you sure you want to\noverwrite your save?"
-    displayDict["en"].yesno_delete_savegame = u"Are you sure you want to\ndelete this save?"
-    displayDict["en"].play_time_label = u"Play time"
-    displayDict["en"].show_manual_saves = u"Manual"
-    displayDict["en"].show_auto_saves = u"Auto"
+    displayDict["eo"].yesno_yes = u"Yes"
+    displayDict["eo"].yesno_no = u"No"
+    displayDict["eo"].yesno_okay = u"Continue"
+    displayDict["eo"].yesno_savesuccess = u"Progress successfully saved."
+    displayDict["eo"].yesno_quit = u"Are you sure you want to\nquit Katawa Shoujo?"
+    displayDict["eo"].yesno_return_to_main = u"Are you sure you want to\nreturn to the main menu?"
+    displayDict["eo"].save_page_caption = u"Save"
+    displayDict["eo"].new_save_button = u"Create new save state"
+    displayDict["eo"].load_page_caption = u"Load"
+    displayDict["eo"].yesno_load_in_game = u"Are you sure you want to\ndiscard your progress?"
+    displayDict["eo"].yesno_save_overwrite = u"Are you sure you want to\noverwrite your save?"
+    displayDict["eo"].yesno_delete_savegame = u"Are you sure you want to\ndelete this save?"
+    displayDict["eo"].play_time_label = u"Play time"
+    displayDict["eo"].show_manual_saves = u"Manual"
+    displayDict["eo"].show_auto_saves = u"Auto"
 
-    displayDict["en"].text_history_caption = u"Text history"
-    displayDict["en"].text_history_note = u"Note"
+    displayDict["eo"].text_history_caption = u"Text history"
+    displayDict["eo"].text_history_note = u"Note"
 
-    displayDict["en"].extra_menu_caption = "Extras"
-    displayDict["en"].extra_music_button_label = "Jukebox"
-    displayDict["en"].extra_gallery_button_label = "Gallery"
-    displayDict["en"].extra_scene_button_label = "Library"
-    displayDict["en"].extra_omake_button_label = "Omake"
-    displayDict["en"].extra_opening_button_label = "Cinema"
-    displayDict["en"].commentary_label = "Enable commentary"
+    displayDict["eo"].extra_menu_caption = "Extras"
+    displayDict["eo"].extra_music_button_label = "Jukebox"
+    displayDict["eo"].extra_gallery_button_label = "Gallery"
+    displayDict["eo"].extra_scene_button_label = "Library"
+    displayDict["eo"].extra_omake_button_label = "Omake"
+    displayDict["eo"].extra_opening_button_label = "Cinema"
+    displayDict["eo"].commentary_label = "Enable commentary"
 
-    displayDict["en"].video_page_caption = "Extras > Cinema"
+    displayDict["eo"].video_page_caption = "Extras > Cinema"
 
 
-    displayDict["en"].music_page_caption = "Extras > Jukebox"
-    displayDict["en"].music_stop_button_text = "Stop"
-    displayDict["en"].music_now_playing = "Now playing"
+    displayDict["eo"].music_page_caption = "Extras > Jukebox"
+    displayDict["eo"].music_stop_button_text = "Stop"
+    displayDict["eo"].music_now_playing = "Now playing"
 
-    displayDict["en"].gallery_page_caption = "Extras > Gallery"
-    displayDict["en"].gallery_onelocked = "One further image not unlocked."
-    displayDict["en"].gallery_manylocked = "%d further images not unlocked."
-    displayDict["en"].gallery_singlelocked = "Image %d of %d is not unlocked."
-    displayDict["en"].gallery_num_page_prefix = "Page"
-    displayDict["en"].gallery_num_page_error = "No images to display"
+    displayDict["eo"].gallery_page_caption = "Extras > Gallery"
+    displayDict["eo"].gallery_onelocked = "One further image not unlocked."
+    displayDict["eo"].gallery_manylocked = "%d further images not unlocked."
+    displayDict["eo"].gallery_singlelocked = "Image %d of %d is not unlocked."
+    displayDict["eo"].gallery_num_page_prefix = "Page"
+    displayDict["eo"].gallery_num_page_error = "No images to display"
 
-    displayDict["en"].scene_page_caption = "Extras > Library"
-    displayDict["en"].scene_completion_label = "Completion: %s%%"
-    displayDict["en"].scene_playthrough_label = "Use replay flow (recommended)"
-    displayDict["en"].scene_launch_path = "Do you wish to start\nthe entire path?"
+    displayDict["eo"].scene_page_caption = "Extras > Library"
+    displayDict["eo"].scene_completion_label = "Completion: %s%%"
+    displayDict["eo"].scene_playthrough_label = "Use replay flow (recommended)"
+    displayDict["eo"].scene_launch_path = "Do you wish to start\nthe entire path?"
 
-    displayDict["en"].joy_left = "Left"
-    displayDict["en"].joy_right = "Right"
-    displayDict["en"].joy_up = "Up"
-    displayDict["en"].joy_down = "Down"
-    displayDict["en"].joy_dismiss = "Select/Advance"
-    displayDict["en"].joy_rollback = "Text history"
-    displayDict["en"].joy_holdskip = "Hold to skip"
-    displayDict["en"].joy_toggleskip = "Skip mode"
-    displayDict["en"].joy_hide = "Show image"
-    displayDict["en"].joy_menu = "Show menu"
+    displayDict["eo"].joy_left = "Left"
+    displayDict["eo"].joy_right = "Right"
+    displayDict["eo"].joy_up = "Up"
+    displayDict["eo"].joy_down = "Down"
+    displayDict["eo"].joy_dismiss = "Select/Advance"
+    displayDict["eo"].joy_rollback = "Text history"
+    displayDict["eo"].joy_holdskip = "Hold to skip"
+    displayDict["eo"].joy_toggleskip = "Skip mode"
+    displayDict["eo"].joy_hide = "Show image"
+    displayDict["eo"].joy_menu = "Show menu"
 
     ##Names
 
-    displayDict["en"].name_hi = "Hisao"
+    displayDict["eo"].name_hi = "Hisao"
 
-    displayDict["en"].name_ha = "Hanako"
-    displayDict["en"].name_emi = "Emi"
-    displayDict["en"].name_rin = "Rin"
-    displayDict["en"].name_li = "Lilly"
-    displayDict["en"].name_shi = "Shizune"
-    displayDict["en"].name_mi = "Misha"
+    displayDict["eo"].name_ha = "Hanako"
+    displayDict["eo"].name_emi = "Emi"
+    displayDict["eo"].name_rin = "Rin"
+    displayDict["eo"].name_li = "Lilly"
+    displayDict["eo"].name_shi = "Shizune"
+    displayDict["eo"].name_mi = "Misha"
 
-    displayDict["en"].name_ke = "Kenji"
-    displayDict["en"].name_mu = "Mutou"
-    displayDict["en"].name_nk = "Nurse"
-    displayDict["en"].name_no = "Nomiya"
-    displayDict["en"].name_yu = "Yuuko"
-    displayDict["en"].name_sa = "Sae"
-    displayDict["en"].name_aki = "Akira"
-    displayDict["en"].name_hh = "Hideaki"
-    displayDict["en"].name_hx = "Jigoro"
-    displayDict["en"].name_emm = "Meiko"
-    displayDict["en"].name_sk = "Shopkeep"
-    displayDict["en"].name_mk = "Miki"
+    displayDict["eo"].name_ke = "Kenji"
+    displayDict["eo"].name_mu = "Mutou"
+    displayDict["eo"].name_nk = "Nurse"
+    displayDict["eo"].name_no = "Nomiya"
+    displayDict["eo"].name_yu = "Yuuko"
+    displayDict["eo"].name_sa = "Sae"
+    displayDict["eo"].name_aki = "Akira"
+    displayDict["eo"].name_hh = "Hideaki"
+    displayDict["eo"].name_hx = "Jigoro"
+    displayDict["eo"].name_emm = "Meiko"
+    displayDict["eo"].name_sk = "Shopkeep"
+    displayDict["eo"].name_mk = "Miki"
 
-    displayDict["en"].name_mystery = "???"
+    displayDict["eo"].name_mystery = "???"
 
-    displayDict["en"].name_ha_ = "Purple-haired girl"
-    displayDict["en"].name_emi_ = "Twintails girl"
-    displayDict["en"].name_rin_ = "Strange girl"
-    displayDict["en"].name_li_ = "Wavy-haired girl"
-    displayDict["en"].name_mi_ = "Laughing girl"
-    displayDict["en"].name_ke_ = "Bespectacled hallmate"
-    displayDict["en"].name_mu_ = "Tall man"
-    displayDict["en"].name_yu_ = "Librarian"
-    displayDict["en"].name_no_ = "Silver-haired man"
-    displayDict["en"].name_sa_ = "Gallery owner"
-    displayDict["en"].name_aki_ = "Well-dressed person"
-    displayDict["en"].name_nk_ = "Smiling man"
-    displayDict["en"].name_hh_ = "Slim girl"
-    displayDict["en"].name_emm_ = "Woman with braid"
-    displayDict["en"].name_hx_ = "Huge man"
+    displayDict["eo"].name_ha_ = "Purple-haired girl"
+    displayDict["eo"].name_emi_ = "Twintails girl"
+    displayDict["eo"].name_rin_ = "Strange girl"
+    displayDict["eo"].name_li_ = "Wavy-haired girl"
+    displayDict["eo"].name_mi_ = "Laughing girl"
+    displayDict["eo"].name_ke_ = "Bespectacled hallmate"
+    displayDict["eo"].name_mu_ = "Tall man"
+    displayDict["eo"].name_yu_ = "Librarian"
+    displayDict["eo"].name_no_ = "Silver-haired man"
+    displayDict["eo"].name_sa_ = "Gallery owner"
+    displayDict["eo"].name_aki_ = "Well-dressed person"
+    displayDict["eo"].name_nk_ = "Smiling man"
+    displayDict["eo"].name_hh_ = "Slim girl"
+    displayDict["eo"].name_emm_ = "Woman with braid"
+    displayDict["eo"].name_hx_ = "Huge man"
 
-    displayDict["en"].videos = (("Opening", "video/op_1.mkv"),
+    displayDict["eo"].videos = (("Opening", "video/op_1.mkv"),
                                 ("Emi", "video/tc_act2_emi.mkv"),
                                 ("Hanako", "video/tc_act2_hanako.mkv"),
                                 ("Lilly", "video/tc_act2_lilly.mkv"),
@@ -191,7 +191,7 @@
     # Now also doubles as a lookup list for the actual scene names. Display in the extras can be suppressed
     # by setting the third value in the tuple to False. Suppression doesn't work in DQN mode.
     # Note that Ren'Py doesn't like non-ASCII characters in scene titles if the titles are not unicode strings
-    displayDict["en"].s_scenes = (("Prologue", rp_actmark, rp_actmark, ("Act 1","Prologue")),
+    displayDict["eo"].s_scenes = (("Prologue", rp_actmark, rp_actmark, ("Act 1","Prologue")),
                                     ("Out Cold", "NOP1", "On a cold, snowy day, Hisao's dreams were about to be realized, only to be cut short by a sudden heart attack.", ("Act 1","Prologue")),
                                     ("Bundle of Hisao", "NOP2", "Hisao is told about Yamaku Academy, where he will likely spend the rest of his high school days.", ("Act 1","Prologue")),
                                     ("Act 1: Life Expectancy", rp_actmark, rp_actmark, "Act 1"),
@@ -433,7 +433,7 @@
 
     # credits
 
-    displayDict["en"].creditstring = """{image=ui/flourish_left.png} {b}Writing{/b} {image=ui/flourish_right.png}
+    displayDict["eo"].creditstring = """{image=ui/flourish_left.png} {b}Writing{/b} {image=ui/flourish_right.png}
 Anonymous22
 Aura
 cpl_crud
@@ -516,7 +516,7 @@ RAITA
 replicated"""
 
 
-    displayDict["en"].drugs_wordlist  =  ["Disopyramide",
+    displayDict["eo"].drugs_wordlist  =  ["Disopyramide",
                         "Warfarin",
                         "Diltiazem",
                         "Felodipine",
