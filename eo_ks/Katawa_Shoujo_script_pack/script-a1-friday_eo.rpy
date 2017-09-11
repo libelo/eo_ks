@@ -1,4 +1,4 @@
-﻿label en_A25:
+﻿label eo_A25:
 
 window hide None
 scene black
