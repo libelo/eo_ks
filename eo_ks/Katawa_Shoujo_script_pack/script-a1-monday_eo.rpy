@@ -1,7 +1,7 @@
 ﻿#### MONDAY
 
 #**************************************
-label en_NOP1:
+label eo_NOP1:
 window hide None
 
 scene black
@@ -15,7 +15,8 @@ window show
 
 play music music_serene fadein 2.0
 
-"A light breeze causes the naked branches overhead to rattle like wooden windchimes."
+# A light breeze causes the naked branches overhead to rattle like wooden windchimes.
+"Malpeza brizo klakigas la nudajn branĉojn tiel lignaj sonoriloj."
 
 "This is a popular retreat for couples in the summer. The deciduous trees provide a beautiful green canopy, far out of sight of teachers and fellow students."
 
